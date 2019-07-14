@@ -70,10 +70,7 @@
           keyElement.classList.add("playing");
           audioTag.currentTime = 0;
           audioTag.play();
-          setTimeout(
-            () => keyElement.classList.remove("playing"),
-            audioTag.duration + 100
-          );
+          setTimeout(() => keyElement.classList.remove("playing"), 100);
         } catch (err) {
           err;
         }
